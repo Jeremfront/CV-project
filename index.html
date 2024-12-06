@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CV Interactif</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Poiret+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="text-center py-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 400 400" fill="none">
+                <rect width="400" height="400" fill="#f4fefe" />
+            
+                <!-- Cercle central doré -->
+                <circle cx="200" cy="200" r="100" stroke="#d4af37" stroke-width="5" fill="none" />
+            
+                <!-- Rayons autour du cercle -->
+                <path d="M200 50 L210 100 L190 100 Z" fill="#d4af37" />
+                <path d="M200 350 L210 300 L190 300 Z" fill="#d4af37" />
+                <path d="M50 200 L100 190 L100 210 Z" fill="#d4af37" />
+                <path d="M350 200 L300 190 L300 210 Z" fill="#d4af37" />
+            
+                <!-- Triangle supérieur -->
+                <polygon points="200,50 250,150 150,150" fill="none" stroke="#b8860b" stroke-width="3" />
+            
+                <!-- Triangle inférieur -->
+                <polygon points="200,350 250,250 150,250" fill="none" stroke="#b8860b" stroke-width="3" />
+            
+                <!-- Lignes diagonales -->
+                <line x1="50" y1="50" x2="350" y2="350" stroke="#d4af37" stroke-width="2" />
+                <line x1="350" y1="50" x2="50" y2="350" stroke="#d4af37" stroke-width="2" />
+            
+                <!-- Carré central -->
+                <rect x="150" y="150" width="100" height="100" fill="none" stroke="#d4af37" stroke-width="3" />
+            
+                <!-- Motifs rayonnants -->
+                <path d="M200 50 L220 70 L180 70 Z" fill="#d4af37" />
+                <path d="M200 350 L220 330 L180 330 Z" fill="#d4af37" />
+                <path d="M50 200 L70 220 L70 180 Z" fill="#d4af37" />
+                <path d="M350 200 L330 220 L330 180 Z" fill="#d4af37" />
+            </svg>
+            <div>
+            <img src="/assets/profil-pix.png" alt="Photo de profil" class="profile-img rounded-circle">
+            <h1 class="pt-3"> - Jérémy - </h1>
+            <p class="text-muted">"Développeur Front-end"</p>
+        </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 400 400" fill="none">
+                <!-- Fond noir -->
+                <rect width="400" height="400" fill="#f4fefe" />
+            
+                <!-- Cercle central doré -->
+                <circle cx="200" cy="200" r="100" stroke="#d4af37" stroke-width="5" fill="none" />
+            
+                <!-- Rayons autour du cercle -->
+                <path d="M200 50 L210 100 L190 100 Z" fill="#d4af37" />
+                <path d="M200 350 L210 300 L190 300 Z" fill="#d4af37" />
+                <path d="M50 200 L100 190 L100 210 Z" fill="#d4af37" />
+                <path d="M350 200 L300 190 L300 210 Z" fill="#d4af37" />
+            
+                <!-- Triangle supérieur -->
+                <polygon points="200,50 250,150 150,150" fill="none" stroke="#b8860b" stroke-width="3" />
+            
+                <!-- Triangle inférieur -->
+                <polygon points="200,350 250,250 150,250" fill="none" stroke="#b8860b" stroke-width="3" />
+            
+                <!-- Lignes diagonales -->
+                <line x1="50" y1="50" x2="350" y2="350" stroke="#d4af37" stroke-width="2" />
+                <line x1="350" y1="50" x2="50" y2="350" stroke="#d4af37" stroke-width="2" />
+            
+                <!-- Carré central -->
+                <rect x="150" y="150" width="100" height="100" fill="none" stroke="#d4af37" stroke-width="3" />
+            
+                <!-- Motifs rayonnants -->
+                <path d="M200 50 L220 70 L180 70 Z" fill="#d4af37" />
+                <path d="M200 350 L220 330 L180 330 Z" fill="#d4af37" />
+                <path d="M50 200 L70 220 L70 180 Z" fill="#d4af37" />
+                <path d="M350 200 L330 220 L330 180 Z" fill="#d4af37" />
+            </svg>
+        </header>
+    
+        <main class="container my-4">
+            <section id="about" class="mb-5">
+                <h2>À propos</h2>
+                <p>Je m’appelle Jérémy, 
+                    intégrateur web et infographiste.
+                    Passionné par le monde de la technologie et du dessin, j’ai commencé par passer un
+                    Baccalauréat en communication visuelle
+                    
+                    Par la suite, j’ai pris la décision de me former en intégration web afin d’aggrandir mon panel de compétences. Je recherche dorénavant des opportunités de combiner ma créativité et mes compétences techniques..</p>
+            </section>
+    
+            <section id="skills" class="mb-5">
+                <h2>Compétences</h2>
+                <ul class="skills-s">
+                    <div>
+                    <li>React</li>
+                    <li>Next</li>
+                </div>
+                <div>
+                    <li>Photoshop / Illustrator / Indesign</li>
+                    <li>Figma</li>
+                </div>
+                </ul>
+            </section>
+    
+            <section id="experience" class="mb-5">
+                <h2>Expérience</h2>
+                <p>- 2022-2023</p>
+                <h3>Formation de développeur front-end</h3>
+
+                <p>- 2023-2024</p>
+                <h3>Freelance</h3>
+            </section>
+    
+            <section id="contact">
+                <h2>Contact</h2>
+                <form id="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="bouton-submit">Envoyer</button>
+                    <p id="confirmation" class="mt-3" style="display: none;">Message envoyé avec succès !</p>
+                </form>
+            </section>
+        </main>
+    
+        <footer class="text-center py-3">
+            <a href="assets/Cv-Jeremy-B-2.png" download="assets/Cv-Jeremy-B-2.png" class="btn btn-secondary">Télécharger le CV</a>
+        <script src="script.js"></script>
+    </body>
+    
+</html>
